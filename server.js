@@ -10,10 +10,17 @@ let server = http.listen(3000, function () {
     console.log("Server listening on: " + host + " port: " + port);
 });
 
+
 app.get("/test", function (req, res) {
     res.sendFile(__dirname + "/www/test.html");
 });
 
 app.get("/login", function (req, res){
     res.sendFile(__dirname + "/www/login.html");
+});
+
+app.post("/login", (req, res) => {
+    let username = req.body.username;
+    let password =req.body.password;
+    res.send(`Username: ${username} Password: ${password}`);
 });
