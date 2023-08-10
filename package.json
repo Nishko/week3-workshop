@@ -1,0 +1,22 @@
+{
+  "name": "project_server",
+  "version": "1.0.0",
+  "description": "Workshop 3 nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nishko/week3-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nishko/week3-workshop/issues"
+  },
+  "homepage": "https://github.com/Nishko/week3-workshop#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
